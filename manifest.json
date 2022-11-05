@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "YouTube ReDirecter",
+  "version": "1.1",
+  "description": "Encourages you to use YouTube alternatives",
+  "icons": {
+    "48": "icons/redirecter-48.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/redirecter-48.png",
+    "default_title": "Re: Directer",
+    "default_popup": "popup/set_alternatives.html"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*", "*://youtube.com/*"],
+      "js": ["scripts/redirecter.js"]
+    }
+  ]
+}
