@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "YouTube ReDirecter",
-  "version": "1.1",
+  "version": "1.2",
   "description": "Encourages you to use YouTube alternatives",
   "icons": {
     "48": "icons/redirecter-48.png"
@@ -19,5 +19,10 @@
       "matches": ["*://*.youtube.com/*", "*://youtube.com/*"],
       "js": ["scripts/redirecter.js"]
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "update_url": "https://addons.1416.info/updates.json"
+    }
+  }
 }
